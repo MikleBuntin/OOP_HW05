@@ -1,1 +1,5 @@
-User{name='Mikle', age=37}User{name='Julia', age=27}
+User{name='Mikle', age=37}
+User{name='Julia', age=27}
+User{name='Serafima', age=10}
+User{name='Daria', age=8}
+User{name='Sandra', age=7}
