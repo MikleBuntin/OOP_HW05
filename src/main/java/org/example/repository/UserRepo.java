@@ -10,7 +10,7 @@ public class UserRepo {
     public UserRepo() throws FileNotFoundException {
     }
 
-    public void saveUser(User user){
+    public void addUser(User user) {
         try(FileWriter fileWriter = new FileWriter(file, true)){
             fileWriter.write(user.toString());
         } catch (IOException e) {
@@ -34,8 +34,6 @@ public class UserRepo {
             }
         }
 
-    public void addUser(User user) {
-    }
 
     public static Integer getNewID() {
         FileReader fileReader = null;

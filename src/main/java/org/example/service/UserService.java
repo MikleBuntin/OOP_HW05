@@ -18,10 +18,6 @@ public class UserService {
     }
 
 
-    public void saveUser(User user){
-        userRepo.saveUser(user);
-    }
-
     public void viewAll() throws IOException {
         userRepo.viewAll();
     }
@@ -29,7 +25,7 @@ public class UserService {
     public void addUser() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите имя и баланс");
-        Integer id = userRepo.getNewID();
+        Integer id = UserRepo.getNewID();
         userRepo.addUser(new User(id, scanner.nextLine(), scanner.nextInt()));
     }
 }
