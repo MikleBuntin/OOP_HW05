@@ -129,8 +129,6 @@ public class UserRepo {
             new FileWriter(file, false).close();
             FileWriter fileWriter = new FileWriter(file, true);
             for (String str: stringList) {
-                System.out.println("Writed: " + str);
-
                 fileWriter.write(str + '\n');
             }
             fileWriter.close();
