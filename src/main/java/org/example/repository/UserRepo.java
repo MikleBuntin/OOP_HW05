@@ -76,8 +76,6 @@ public class UserRepo {
             new FileWriter(file, false).close();
             FileWriter fileWriter = new FileWriter(file, true);
                 for (String str: stringList) {
-                    System.out.println("Writed: " + str);
-
                     fileWriter.write(str + '\n');
                 }
                 fileWriter.close();
@@ -87,9 +85,92 @@ public class UserRepo {
         }
     }
 
-}
+    public void getCheck(int getCheckId) {
+        FileReader fileReader = null;
+        try {
+            fileReader = new FileReader(file);
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+            String line = bufferedReader.readLine();
+            Integer id = null;
+            while (line != null) {
+                String[] subLine = line.split("ID=");
+                id = Integer.parseInt(subLine[1].split(", ")[0]);
+                if (id == getCheckId) {
+                    Integer check = Integer.parseInt(subLine[1].split("check=")[1].split("}")[0]);
+                    System.out.println(check);}
+                line = bufferedReader.readLine();
+            }
+            fileReader.close();
+        } catch(IOException e){throw new RuntimeException(e);}
+    }
 
-//    User{ID=0, name=Mikle, check=2000}
-//    User{ID=1, name=Julia, check=2500}
-//    User{ID=2, name=Irina, check=2800}
-//    User{ID=3, name=Serafima, check=2500}
+    public void enrollment(Integer id, Integer summ) {
+        FileReader fileReader = null;
+        try {
+            ArrayList<String> stringList = new ArrayList<>();
+            fileReader = new FileReader(file);
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+            String line = bufferedReader.readLine();
+            Integer idCount = 0;
+            while (line != null) {
+                String[] subLine = line.split("ID=");
+                idCount = Integer.parseInt(subLine[1].split(", ")[0]);
+                if (idCount != id) {stringList.add(line);}
+                else {
+                    Integer check = Integer.parseInt(subLine[1].split("check=")[1].split("}")[0]);
+                    check = check + summ;
+                    line = line.split("check=")[0] + check + "}";
+                    stringList.add(line);
+                }
+                line = bufferedReader.readLine();
+            }
+            fileReader.close();
+
+            new FileWriter(file, false).close();
+            FileWriter fileWriter = new FileWriter(file, true);
+            for (String str: stringList) {
+                System.out.println("Writed: " + str);
+
+                fileWriter.write(str + '\n');
+            }
+            fileWriter.close();
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    public void consumption(Integer id, Integer summ) {
+        FileReader fileReader = null;
+        try {
+            ArrayList<String> stringList = new ArrayList<>();
+            fileReader = new FileReader(file);
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+            String line = bufferedReader.readLine();
+            Integer idCount = 0;
+            while (line != null) {
+                String[] subLine = line.split("ID=");
+                idCount = Integer.parseInt(subLine[1].split(", ")[0]);
+                if (idCount != id) {stringList.add(line);}
+                else {
+                    Integer check = Integer.parseInt(subLine[1].split("check=")[1].split("}")[0]);
+                    check = check - summ;
+                    line = line.split("check=")[0] + check + "}";
+                    stringList.add(line);
+                }
+                line = bufferedReader.readLine();
+            }
+            fileReader.close();
+
+            new FileWriter(file, false).close();
+            FileWriter fileWriter = new FileWriter(file, true);
+            for (String str: stringList) {
+                fileWriter.write(str + '\n');
+            }
+            fileWriter.close();
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
+    }
+}

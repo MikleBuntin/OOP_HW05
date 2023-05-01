@@ -32,8 +32,6 @@ public class UserService {
     public void deleteUser() throws FileNotFoundException {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите ID");
-//        UserRepo userRepo1 = new UserRepo();
         userRepo.deleteUser(scanner.nextInt());
-
     }
 }

@@ -1,4 +1,7 @@
-User{ID=0, name=Mikle, check=2000}
-User{ID=1, name=Julia, check=2500}
-User{ID=3, name=Serafima, check=2500}
+User{ID=0, name=Mikle, 4500}
+User{ID=1, name=Julia, 1820}
+User{ID=3, name=Serafima, 2750}
 User{ID=4, name=Irina, check=2400}
+User{ID=5, name=Daria, check=2800}
+User{ID=6, name=Sandra, check=3200}
+User{ID=7, name=Fedor, check=3200}

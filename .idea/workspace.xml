@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d472e27b-c15c-4dbd-8a83-95b7f5c25eeb" name="Changes" comment="GetNewID Работает, addUser, viewAll работают.">
+    <list default="true" id="d472e27b-c15c-4dbd-8a83-95b7f5c25eeb" name="Changes" comment="Сделал удаление пользователей.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/MoneyService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/UserRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/view/UserView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/view/UserView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/text.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682919534040</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Сделал удаление пользователей.">
+      <created>1682925707170</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682925707170</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -144,6 +153,7 @@
     <MESSAGE value="Начал структуру проекта. Создал метод GetNewID." />
     <MESSAGE value="Начал структуру проекта. Создал методы GetNewID, addUser, viewAll." />
     <MESSAGE value="GetNewID Работает, addUser, viewAll работают." />
-    <option name="LAST_COMMIT_MESSAGE" value="GetNewID Работает, addUser, viewAll работают." />
+    <MESSAGE value="Сделал удаление пользователей." />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделал удаление пользователей." />
   </component>
 </project>
