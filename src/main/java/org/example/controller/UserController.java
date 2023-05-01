@@ -13,7 +13,7 @@ public class UserController {
     userService.viewAll();
     }
 
-    public void addUser() {
+    public void addUser() throws FileNotFoundException {
         userService.addUser();
     }
 }

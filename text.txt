@@ -1,5 +1,4 @@
-User{name='Mikle', age=37}
-User{name='Julia', age=27}
-User{name='Serafima', age=10}
-User{name='Daria', age=8}
-User{name='Sandra', age=7}
+User{ID=0, name=Mikle, check=2000}
+User{ID=1, name=Julia, check=2500}
+User{ID=2, name=Irina, check=2800}
+User{ID=3, name=Serafima, check=2500}

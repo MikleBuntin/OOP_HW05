@@ -38,8 +38,8 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "ID=" + id + '\'' +
-                ", name=" + name + '\'' +
+                "ID=" + id +
+                ", name=" + name +
                 ", check=" + check +
                 '}' + "\n";
     }

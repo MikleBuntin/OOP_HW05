@@ -22,10 +22,11 @@ public class UserService {
         userRepo.viewAll();
     }
 
-    public void addUser() {
+    public void addUser() throws FileNotFoundException {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите имя и баланс");
-        Integer id = UserRepo.getNewID();
+        UserRepo userRepo1 = new UserRepo();
+        Integer id = userRepo1.getNewID();
         userRepo.addUser(new User(id, scanner.nextLine(), scanner.nextInt()));
     }
 }

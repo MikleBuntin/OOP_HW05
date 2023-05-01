@@ -26,6 +26,7 @@ public class UserRepo {
             String line = bufferedReader.readLine();
             while (line != null) {
                 System.out.println(line);
+                line = bufferedReader.readLine();
             }
             fileReader.close();
         }
@@ -41,15 +42,18 @@ public class UserRepo {
             fileReader = new FileReader(file);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             String line = bufferedReader.readLine();
+            System.out.println(line);
+
             Integer newID = 0;
             Integer id = 0;
             while (line != null) {
-                String[] subLine = line.split("ID='");
+                String[] subLine = line.split("ID=");
                 id = Integer.parseInt(subLine[1].split(", ")[0]);
-                if (id > newID) {newID = id;}
+                if (id >= newID) {newID = ++id;}
+                line = bufferedReader.readLine();
             }
             fileReader.close();
-            return newID++;
+            return newID;
         }
         catch(IOException e){
             throw new RuntimeException(e);

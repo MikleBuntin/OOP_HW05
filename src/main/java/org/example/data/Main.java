@@ -2,10 +2,11 @@ package org.example.data;
 
 import org.example.controller.UserController;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         Scanner iScanner = new Scanner(System.in);
         while (true) {
@@ -18,13 +19,13 @@ public class Main {
                     "5 - Снять средства \n" +
                     "Q - выйти");
             String str = iScanner.nextLine();
+            UserController userController = new UserController();
             if (str.equals("Q")) {
                 iScanner.close();
                 break;
             } else if (str.equals("1")) {
-
+                userController.viewAllUsers();
             } else if (str.equals("2")) {
-                UserController userController = new UserController();
                 userController.addUser();
             }
 
