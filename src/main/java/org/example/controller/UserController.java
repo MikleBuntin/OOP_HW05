@@ -16,4 +16,8 @@ public class UserController {
     public void addUser() throws FileNotFoundException {
         userService.addUser();
     }
+
+    public void deleteUser() throws FileNotFoundException {
+        userService.deleteUser();
+    }
 }

@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d472e27b-c15c-4dbd-8a83-95b7f5c25eeb" name="Changes" comment="Начал структуру проекта. Создал методы GetNewID, addUser, viewAll.">
+    <list default="true" id="d472e27b-c15c-4dbd-8a83-95b7f5c25eeb" name="Changes" comment="GetNewID Работает, addUser, viewAll работают.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/UserRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/text.txt" afterDir="false" />
@@ -129,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682894553856</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="GetNewID Работает, addUser, viewAll работают.">
+      <created>1682919534040</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682919534040</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -137,6 +143,7 @@
     <MESSAGE value="Code before task 1." />
     <MESSAGE value="Начал структуру проекта. Создал метод GetNewID." />
     <MESSAGE value="Начал структуру проекта. Создал методы GetNewID, addUser, viewAll." />
-    <option name="LAST_COMMIT_MESSAGE" value="Начал структуру проекта. Создал методы GetNewID, addUser, viewAll." />
+    <MESSAGE value="GetNewID Работает, addUser, viewAll работают." />
+    <option name="LAST_COMMIT_MESSAGE" value="GetNewID Работает, addUser, viewAll работают." />
   </component>
 </project>

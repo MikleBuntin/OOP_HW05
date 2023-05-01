@@ -25,8 +25,15 @@ public class UserService {
     public void addUser() throws FileNotFoundException {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите имя и баланс");
-        UserRepo userRepo1 = new UserRepo();
-        Integer id = userRepo1.getNewID();
+        UserRepo userRepo = new UserRepo();
+        Integer id = userRepo.getNewID();
         userRepo.addUser(new User(id, scanner.nextLine(), scanner.nextInt()));
+    }
+    public void deleteUser() throws FileNotFoundException {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите ID");
+//        UserRepo userRepo1 = new UserRepo();
+        userRepo.deleteUser(scanner.nextInt());
+
     }
 }

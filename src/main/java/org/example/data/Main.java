@@ -28,8 +28,7 @@ public class Main {
             } else if (str.equals("2")) {
                 userController.addUser();
             }
-
-//            else if (str.equals("3")) PrintFiltered(laptopHashSet);
+            else if (str.equals("3")) userController.deleteUser();;
 //            else if (str.equals("4")) PrintSorted(laptopHashSet);
         }
     }
